@@ -15,12 +15,7 @@ export class HomePage {
     public platform: Platform,
     public vibration: Vibration
   ) {
-    this.audio.preloadSimple('shave','assets/audio/shaver.mp3').then(res => {
-      console.log(res)
-    })
-    .catch(err =>{
-      console.error('erro preload',err);
-    })
+
     
     console.log(this.platform.is('cordova'))
   }
